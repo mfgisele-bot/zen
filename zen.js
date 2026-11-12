@@ -20,7 +20,10 @@ if (!reducedMotion.matches) {
     jarallax(document.querySelectorAll('.mbr-parallax-background'));
   }
 
-  const hero = document.querySelector('#header02-32');
+}
+
+const preview = document.querySelector('#header02-32 .mbr-background-video-preview');
+if (preview && !reducedMotion.matches) {
   const background = document.createElement('div');
   background.className = 'zen-video';
   background.setAttribute('aria-hidden', 'true');
@@ -31,5 +34,5 @@ if (!reducedMotion.matches) {
   player.referrerPolicy = 'strict-origin-when-cross-origin';
   player.src = 'https://www.youtube-nocookie.com/embed/bjMxu2Ka9QQ?autoplay=1&mute=1&controls=0&loop=1&playlist=bjMxu2Ka9QQ&playsinline=1&rel=0';
   background.append(player);
-  hero.querySelector('.mbr-background-video-preview').after(background);
+  preview.after(background);
 }
