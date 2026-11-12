@@ -1,0 +1,28 @@
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 5rem; }
+#menu1-30 .navbar .dropdown > .dropdown-menu.show { display: flex; }
+#header02-32 { overflow: hidden; }
+.zen-video {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  container-type: size;
+}
+.zen-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  width: max(100cqw, 177.78cqh);
+  height: max(100cqh, 56.25cqw);
+  transform: translate(-50%, -50%);
+  border: 0;
+}
+@media (max-width: 991px) {
+  #menu1-30 .navbar .dropdown > .dropdown-menu.show { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
