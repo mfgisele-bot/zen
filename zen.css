@@ -26,3 +26,13 @@ section[id] { scroll-margin-top: 5rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+#features7-y > .row { margin-inline: 0; }
+#menu1-30 .navbar .dropdown-menu .dropdown-item::before {
+  content: "";
+  width: .4em;
+  height: .4em;
+  border: solid currentColor;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+}
